@@ -1,0 +1,310 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* :root{
+    --nanbar-height:59px
+} */
+
+/* navbar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/* navigatin bar and logo image set */
+#logo {
+    margin: 0px 9px;
+
+}
+
+#logo img {
+    height: 60px;
+    margin: 3px 3px;
+}
+
+#navbar {
+    position: sticky;
+    /* position:absolute; */
+    top: 0px;
+}
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    font-size: medium;
+    font-family: 'Croissant One', cursive;
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    color: rgb(176, 124, 56);
+    border-radius: 22px;
+    padding: 12px 25px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover {
+
+    color: rgb(240, 237, 234);
+    background-color: rgb(176, 124, 56);
+
+
+}
+
+
+/* Homesection */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 200px;
+    height: 544px;
+
+}
+
+#home::before {
+    content: "";
+    background: url('bg1.jpg');
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    background-repeat: no-repeat;
+    background-attachment: center;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#home h1 {
+    color: brown;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    text-shadow: 3px 6px 4px brown;
+
+}
+
+#home p {
+    color: #f9fafc;
+    text-shadow: 3px 6px 4px brown;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+
+}
+
+
+/* service section */
+
+#services {
+    margin: 25px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 5px 10px;
+    padding: 5px 6px;
+    border-radius: 25px;
+    background: rgb(234, 217, 205);
+    color: rgb(156, 93, 10);
+}
+
+#services .box img {
+    height: 240px;
+    display: block;
+    margin: auto;
+}
+
+
+/* clients section */
+#client-section{
+    height: 300px;
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    background: url('bg2.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-attachment: center;
+    background-position: center;
+    background-size: cover;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-itm{
+    margin: 10px 50px;
+    padding: 10px 50px;
+}
+.clients img{
+    height: 100px;
+    
+}
+
+
+
+/* contact section */
+#contact{
+position: relative;
+}
+#contact::before{
+    content: "";
+    background: url('contact.png');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-attachment:center;
+    background-position:center;
+    background-size:cover;
+}
+#contact-box{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+#contact-box input,
+#contact-box select,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.6rem;
+    opacity: 0.8;
+    background: rgb(231, 202, 190);
+    border-radius: 15px;
+    font-size: 1.1rem;
+    
+}
+
+#contact form{
+    width: 50%;
+}
+#contact label{
+    font-size: larger;
+    font-family: 'Shadows Into Light', cursive;
+   
+}
+
+
+#contact form #bro{
+    width: 50%;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    
+}
+#contact form #bro .buy{
+    margin: 12px;
+    /* display: flex; */
+    cursor: pointer;
+    box-shadow: 2px 2px 0px brown
+    
+}
+#contact form #bro .buy:hover{
+    background-color: brown;
+    box-shadow: 2px 2px 0px rgb(67, 63, 59);
+    
+    color: burlywood;
+}
+
+
+
+
+
+
+/* footer section */
+
+footer{
+    background: black;
+    color: white;
+    padding: 5px 15px;
+   
+}
+
+
+
+
+
+/* utility classes */
+.h-prim {
+    font-size: 3.5rem;
+    padding: 20px;
+    font-family: 'Croissant One', cursive;
+    color: #994d2a;
+    text-shadow: 6px 8px 8px brown;
+
+}
+
+.h-scnd {
+    font-size: 2rem;
+    padding: 20px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.btn {
+    padding: 5px 15px;
+    border: 2px solid rgb(90, 22, 22);
+    background-color: burlywood;
+    color: brown;
+    margin: 25px;
+    font-size: 1.1rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px brown
+}
+
+.btn:hover {
+    background-color: brown;
+    box-shadow: 2px 2px 0px burlywood;
+    
+    color: burlywood;
+}
+
+.center {
+    text-align: center;
+}
+
+hr{
+    border: 5px solid brown;
+}
